@@ -49,7 +49,7 @@ namespace HorseRacing
                        runner.Chance = Helpers.RunnersChance(runner, Helpers.CalculateMargin(runners));
                     }
                   Runner winner = Helpers.CalculateWinner(runners);
-                    Console.WriteLine("the winner is {0}", winner.Name);
+                    Console.WriteLine("the winner is {0} who had a chance of winning {1}", winner.Name , winner.Chance);
                 }
             }
             else
